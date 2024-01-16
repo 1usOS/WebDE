@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 1.5rem;
   min-height: 100vh;
 }
 
@@ -25,13 +25,88 @@
   gap: 0.5rem;
 }
 
-.description p {
+.descriptionBar {
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
+  background-color: rgba(var(--callout-rgb), 0.2);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
+}
+
+.dyLand {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.2);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  background:black;
+  color: #fff;
+}
+
+.descriptionDesk {
+  position: relative;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: rgba(var(--callout-rgb), 0.2);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  display:flex;
+  font-size:18px;
+}
+
+.descriptionDesk a {
+  padding:0.5rem 12px;
+  border-radius: var(--border-radius);
+  transition: .25s;
+}
+
+.descriptionDesk a:hover {
+  background-color: rgba(155,155,155,0.2);
+}
+
+.descriptionDeskIcon {
+  font-size: 32px !important;
+  padding: 0 12px !important;
+}
+
+.descriptionMenuPopover div {
+  background: transparent;
+  box-shadow: none;
+}
+
+.descriptionMenu {
+  margin-top: 12px !important;
+  padding: 1rem 0 !important;
+  background-color: rgba(var(--callout-rgb), 0.2) !important;
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3) !important;
+  border-radius: var(--border-radius) !important;
+  font-size:18px !important;
+}
+
+.descriptionMenuItem {
+  padding: 0.5rem 1rem 0.5rem 1rem !important;
+  margin: 0 0.5rem !important;
+  border-radius: var(--border-radius) !important;
+  transition: .25s;
+}
+
+.descriptionMenuTitle span {
+  padding-left: 1.5rem;
+  font-size: 1.5rem !important;
+}
+
+.descriptionMenuItem:hover {
+  background-color: rgba(155,155,155,0.2) !important;
+}
+
+.descriptionMenu hr {
+  margin: 0.5rem 0.5rem;
+}
+
+.descriptionMenuText {
+  padding-right: 2.5rem;
 }
 
 .code {
@@ -41,17 +116,29 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
   width: var(--max-width);
   max-width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgba(var(--callout-rgb), 0.2);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  display:flex;
 }
 
 .card {
-  padding: 1rem 1.2rem;
+  padding: .25rem;
+  margin: 0 .25rem;
+  padding-bottom: .05rem;
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background 200ms, border 200ms;
+  transition: background .25s, border .25s, top ease .25s;
+  position: relative;
+  top: 0;
+}
+
+.card:hover {
+  top: -10px;
 }
 
 .card span {
@@ -107,6 +194,14 @@
 .logo {
   position: relative;
 }
+
+.appIcon {
+  position: relative;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 14px 28px rgba(168, 168, 168, 0.15), 0 10px 10px rgba(168, 168, 168, 0.12);
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -214,8 +309,28 @@
     filter: invert(1);
   }
 
-  .logo {
+  .logo .appIcon {
     filter: invert(0) drop-shadow(0 0 0.3rem #ffffff70);
+  }
+
+  .descriptionMenuItem {
+    color: #fff !important;
+  }
+
+  .descriptionMenu p {
+    color: #fff !important;
+  }
+
+  .descriptionMenu hr {
+    background: rgba(155,155,155,.5);
+  }
+
+  .descriptionMenuTitle span {
+    color: #fff;
+  }
+
+  .grid hr {
+    background: rgba(155,155,155,.5);
   }
 }
 
