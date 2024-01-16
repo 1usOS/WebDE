@@ -4,8 +4,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: '1us | Software for Everyone',
-  description: 'A project to explore open source software (and hardware) as well as building a ecosystem. We believe software should be freely accessible and user customisable.',
+  title: '1usOS',
+  description: '1usOS Web Desktop.',
 }
 
 export default function RootLayout({
