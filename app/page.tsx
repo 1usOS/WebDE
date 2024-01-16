@@ -18,7 +18,7 @@ export default function Home() {
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const menuopen = Boolean(anchorEl);
-  const handleMenuClick = (event: MouseEvent<HTMLButtonElement>) => {
+  const handleMenuClick = (event: MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
   const handleMenuClose = () => {
@@ -57,7 +57,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>About 1us</ListItemText>
@@ -115,10 +115,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             </MenuList>); 
             handleMenuClick(event);}}
             rel="noopener noreferrer">1us</a>
+
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>New Window</ListItemText>
@@ -178,10 +179,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer">File</a>
+
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>Undo</ListItemText>
@@ -232,10 +234,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer">Edit</a>
+
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>as Icons</ListItemText>
@@ -278,10 +281,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer">View</a>
+
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>Back</ListItemText>
@@ -323,10 +327,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer">Go</a>
+
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>Minimize window</ListItemText>
@@ -386,10 +391,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer">Window</a>
+
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>About 1us</ListItemText>
@@ -412,6 +418,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer">Help</a>
+            
           </div>
           }
 
@@ -458,7 +465,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <ListItemText className={styles.descriptionMenuTitle}>WiFi<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
               <Divider />
@@ -490,7 +497,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <ListItemText className={styles.descriptionMenuTitle}>Bluetooth<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
               <Divider />
@@ -513,7 +520,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <ListItemText className={styles.descriptionMenuTitle}>Sound<IonIcon icon={volumeHigh} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
               <Slider valueLabelDisplay="auto" defaultValue={30} step={5} marks min={10} max={100} style={{margin:"0 1.5rem",maxWidth:"-webkit-fill-available"}} disabled />
@@ -531,7 +538,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
-            onClick={(event) => {
+            onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
               <ListItemText className={styles.descriptionMenuTitle}>Power<IonIcon icon={flash} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
               <Divider />
