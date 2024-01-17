@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
   min-height: 100vh;
 }
 
@@ -48,12 +48,12 @@
 .descriptionDesk {
   position: relative;
   margin: 0;
-  padding: 0.5rem 1rem;
+  padding: 0.35rem .5rem;
   background-color: rgba(var(--callout-rgb), 0.2);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
   display:flex;
-  font-size:18px;
+  font-size:.85rem;
 }
 
 .descriptionDesk a {
@@ -67,8 +67,8 @@
 }
 
 .descriptionDeskIcon {
-  font-size: 32px !important;
-  padding: 0 12px !important;
+  font-size: 1.25rem;
+  padding: 0 .35rem !important;
 }
 
 .descriptionMenuPopover div {
@@ -78,11 +78,17 @@
 
 .descriptionMenu {
   margin-top: 12px !important;
-  padding: 1rem 0 !important;
   background-color: rgba(var(--callout-rgb), 0.2) !important;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3) !important;
   border-radius: var(--border-radius) !important;
-  font-size:18px !important;
+}
+
+.descriptionMenu span {
+  font-size: .85rem;
+}
+
+.descriptionMenu p {
+  font-size: .75rem;
 }
 
 .descriptionMenuItem {
@@ -93,8 +99,8 @@
 }
 
 .descriptionMenuTitle span {
-  padding-left: 1.5rem;
-  font-size: 1.5rem !important;
+  padding-left: 1.25rem;
+  font-size: 1.25rem !important;
 }
 
 .descriptionMenuItem:hover {
@@ -118,7 +124,7 @@
   display: grid;
   width: var(--max-width);
   max-width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem;
   background-color: rgba(var(--callout-rgb), 0.2);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
@@ -197,8 +203,10 @@
 
 .appIcon {
   position: relative;
+  height: 3.5rem;
+  width: 3.5rem;
   background: #fff;
-  border-radius: var(--border-radius);
+  border-radius: .65rem;
   box-shadow: 0 14px 28px rgba(168, 168, 168, 0.15), 0 10px 10px rgba(168, 168, 168, 0.12);
 }
 

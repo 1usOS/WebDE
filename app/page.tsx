@@ -467,7 +467,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
-              <ListItemText className={styles.descriptionMenuTitle}>WiFi<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
+              <ListItemText className={styles.descriptionMenuTitle}>WiFi<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
               <Divider />
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>7 </p>ASUS Mesh</ListItemText>
@@ -499,7 +499,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
-              <ListItemText className={styles.descriptionMenuTitle}>Bluetooth<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
+              <ListItemText className={styles.descriptionMenuTitle}>Bluetooth<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
               <Divider />
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}><IonIcon icon={bluetooth} /> Keychron K4</ListItemText>
@@ -522,7 +522,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
-              <ListItemText className={styles.descriptionMenuTitle}>Sound<IonIcon icon={volumeHigh} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
+              <ListItemText className={styles.descriptionMenuTitle}>Sound<IonIcon icon={volumeHigh} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
               <Slider valueLabelDisplay="auto" defaultValue={30} step={5} marks min={10} max={100} style={{margin:"0 1.5rem",maxWidth:"-webkit-fill-available"}} disabled />
               <Divider />
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
@@ -540,7 +540,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
               setTopBarMenu(<MenuList className={styles.descriptionMenu}>
-              <ListItemText className={styles.descriptionMenuTitle}>Power<IonIcon icon={flash} style={{float:"right",paddingRight:"1.5rem",fontSize:"36px"}} /></ListItemText>
+              <ListItemText className={styles.descriptionMenuTitle}>Power<IonIcon icon={flash} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
               <Divider />
               <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
                 <ListItemText className={styles.descriptionMenuText}>
@@ -580,7 +580,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
                 <ListItemText className={styles.descriptionMenuText}>Manage Power Settings</ListItemText>
               </MenuItem>
             </MenuList>); 
-            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><p style={{fontSize:"18px"}}>100%</p><IonIcon icon={batteryChargingOutline} /></a>
+            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><p style={{fontSize:".85rem"}}>100%</p><IonIcon style={{fontSize: "1.5rem"}} icon={batteryChargingOutline} /></a>
             <a href="#" rel="noopener noreferrer">{clock}</a>
           </div>
           }
@@ -626,8 +626,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="file_icon.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
@@ -639,8 +639,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="web_icon.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
@@ -652,8 +652,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="chatulus_icon.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
@@ -665,8 +665,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="reactiveide_icon.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
@@ -678,8 +678,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="1usOS_icon.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
@@ -693,8 +693,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="1us.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
@@ -706,8 +706,8 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           className={styles.appIcon}
           src="app_library_icon.png"
           alt="App Icon"
-          width={72}
-          height={72}
+          width={0}
+          height={0}
           priority
         /></Tooltip></a>
 
