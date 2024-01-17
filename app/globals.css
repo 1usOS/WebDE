@@ -93,8 +93,23 @@ a {
   text-decoration: none;
 }
 
+#show-mobile {
+  display: none !important;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  #hide-mobile {
+    display: none !important;
+  }
+
+  #show-mobile {
+    display: unset !important;
   }
 }

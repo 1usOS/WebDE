@@ -15,6 +15,7 @@ export default function Home() {
 
   const [dylandElement, setDylandElement] = useState("Welcome to the Dyland!");
   const [clock, setClock] = useState("");
+  const [mobileclock, setMobileClock] = useState("");
 
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const menuopen = Boolean(anchorEl);
@@ -33,6 +34,7 @@ export default function Home() {
     let formatted_date = weekday_short[date.getDay()] + " " + date.getDate() +  " " + month_short[date.getMonth()] 
     let formatted_time = date.getHours() + ":" + date.getMinutes().toLocaleString(undefined, {minimumIntegerDigits: 2})
     let formatted_clock = formatted_date + " " + formatted_time
+    setMobileClock(formatted_time)
     setClock(formatted_clock)
   },1000)
 
@@ -52,7 +54,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           <div className={styles.descriptionBar}>
             <p>Coming Soon. Stay Tuned.</p>
           </div> : 
-          <div className={styles.descriptionDesk}>
+          <div id="hide-mobile" className={styles.descriptionDesk}>
             <a  
             aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
@@ -534,7 +536,9 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
               </MenuItem>
             </MenuList>); 
             handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={volumeHigh} /></a>
-            <a onClick={toggleColorScheme} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={chevronDownOutline} /></a>
+            <a id="hide-mobile" onClick={toggleColorScheme} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={chevronDownOutline} /></a>
+
+            <div style={{display:"flex"}} className={styles.mobileTopbarRight} >
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
@@ -580,8 +584,11 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
                 <ListItemText className={styles.descriptionMenuText}>Manage Power Settings</ListItemText>
               </MenuItem>
             </MenuList>); 
-            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><p style={{fontSize:".85rem"}}>100%</p><IonIcon style={{fontSize: "1.5rem"}} icon={batteryChargingOutline} /></a>
-            <a href="#" rel="noopener noreferrer">{clock}</a>
+            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><p id="hide-mobile" style={{fontSize:".85rem"}}>100%</p><IonIcon style={{fontSize: "1.5rem"}} icon={batteryChargingOutline} /></a>
+            <a id="show-mobile" href="#" rel="noopener noreferrer" style={{padding: "0.1rem 1.5rem 0rem 0.5rem"}}>{mobileclock}</a>
+            </div>
+            <a id="hide-mobile" href="#" rel="noopener noreferrer">{clock}</a>
+            
           </div>
           }
 
@@ -670,7 +677,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           priority
         /></Tooltip></a>
 
-        <a
+        <a id="hide-mobile"
           href="#start=org.1us.osinstaller"
           className={styles.card} rel="noopener noreferrer">
         <Tooltip title="Install 1usOS" placement="top">
@@ -683,9 +690,9 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           priority
         /></Tooltip></a>
 
-        <Divider orientation="vertical" variant="middle" flexItem style={{margin:".25rem .5rem"}} />
+        <Divider id="hide-mobile" orientation="vertical" variant="middle" flexItem style={{margin:".25rem .5rem"}} />
 
-        <a
+        <a id="hide-mobile"
           href="#start=org.1us"
           className={styles.card} rel="noopener noreferrer">
         <Tooltip title="1us" placement="top">
@@ -698,7 +705,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           priority
         /></Tooltip></a>
 
-        <a
+        <a id="hide-mobile"
           href="#start=org.1us.applibrary"
           className={styles.card} rel="noopener noreferrer">
         <Tooltip title="App Library" placement="top">

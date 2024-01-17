@@ -236,13 +236,13 @@
 
   .grid {
     grid-template-columns: 1fr;
-    margin-bottom: 120px;
-    max-width: 320px;
     text-align: center;
+    position: absolute;
+    bottom: 2%;
   }
 
   .card {
-    padding: 1rem 2.5rem;
+    padding: .45rem;
   }
 
   .card h2 {
@@ -250,7 +250,7 @@
   }
 
   .center {
-    padding: 8rem 0 6rem;
+    padding: 8rem 0 20rem;
   }
 
   .center::before {
@@ -266,42 +266,43 @@
     padding: 1rem;
   }
 
-  .description p,
-  .description div {
+  .description p {
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100%;
   }
 
-  .description p {
-    align-items: center;
-    inset: 0 0 auto;
-    padding: 2rem 1rem 1.4rem;
-    border-radius: 0;
-    border: none;
-    border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-    background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
-    );
-    background-clip: padding-box;
-    backdrop-filter: blur(24px);
+  .dyLand {
+    position: absolute !important;
+    justify-content: center !important;
+    display: flex !important;
+    max-width: 35% !important;
+    left: 32% !important;
+    top: 2% !important;
+    font-size: .5rem;
   }
 
-  .description div {
-    align-items: flex-end;
-    pointer-events: none;
-    inset: auto 0 0;
-    padding: 2rem;
-    height: 200px;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
-    );
-    z-index: 1;
+  .descriptionDesk {
+    position: absolute !important;
+    top: 3.25% !important;
+    border: none;
+    width: 100% !important;
+    left: 0 !important;
+    background: none !important;
+    padding: 0rem 1rem;
+  }
+
+  .mobileTopbarRight {
+    position: absolute;
+    top: 3.25%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .appIcon {
+    height: 4.25rem;
+    width: 4.35rem;
   }
 }
 
