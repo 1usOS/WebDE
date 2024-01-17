@@ -35,14 +35,23 @@
 }
 
 .dyLand {
-  position: relative;
-  margin: 0;
-  padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.2);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
   background:black;
   color: #fff;
+  position: absolute;
+  justify-content: center;
+  display: flex;
+  padding: .8rem;
+  max-width: 40%;
+  height: 43px;
+  top: 2%;
+  font-size: .65rem;
+  white-space: nowrap;
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-overflow: ellipsis;
 }
 
 .descriptionDesk {
@@ -271,16 +280,6 @@
     justify-content: center;
     position: fixed;
     width: 100%;
-  }
-
-  .dyLand {
-    position: absolute !important;
-    justify-content: center !important;
-    display: flex !important;
-    max-width: 35% !important;
-    left: 32% !important;
-    top: 2% !important;
-    font-size: .5rem;
   }
 
   .descriptionDesk {
