@@ -2,22 +2,23 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import { useState, useEffect, Fragment, MouseEvent, ReactNode } from "react";
+import { useState, useEffect, MouseEvent, ReactNode } from "react";
 import Draggable from 'react-draggable';
-import { getPreferredColorScheme, applyPreferredColorScheme, toggleColorScheme } from './theme.js';
+import { getPreferredColorScheme, applyPreferredColorScheme, toggleColorScheme } from './components/theme.js';
 import { IonIcon } from "@ionic/react";
-import { Popover, MenuList, MenuItem, ListItemIcon, ListItemText, Typography, Divider, Slider, Tooltip } from '@mui/material';
+import { Popover, MenuList, MenuItem, ListItemText, Typography, Divider, Slider, Tooltip } from '@mui/material';
 import { logoGithub, logoTwitter, logoDiscord, logoInstagram, batteryChargingOutline, chevronDownOutline, volumeHigh, bluetooth, wifi, phonePortraitOutline, toggle, volumeMute, flash, batteryFull, leaf } from  "ionicons/icons";
 
 export default function Home() {
 
+  //Configuration variables
   const [isDesktop, setIsDesktop] = useState(true);
-  const [showDyland, setShowDyland] = useState(false);
+  const [showDyland, setShowDyland] = useState(true);
 
-  const [dylandElement, setDylandElement] = useState("Welcome to the Dyland!");
-  const [clock, setClock] = useState("");
-  const [mobileclock, setMobileClock] = useState("");
+  //Store Values
+  const [dylandElement, setDylandElement] = useState(<div className={styles.dyLand}>Welcome to the Dyland!</div>); 
 
+  // Dropdown Menu
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const menuopen = Boolean(anchorEl);
   const handleMenuClick = (event: MouseEvent<HTMLElement>) => {
@@ -44,13 +45,16 @@ export default function Home() {
   const [testwidget, setTestwidget] = useState(<div className={styles.center}>
       <Image
         className={styles.logo}
-        src=""
+        src="1us.png"
         alt="1us Logo"
         width={180}
         height={180}
         priority
       /></div>);
 
+  // Functions for Date and Time
+  const [clock, setClock] = useState("");
+  const [mobileclock, setMobileClock] = useState("");
 
   useEffect(() => {
   let secTimer = setInterval( () => {
@@ -67,6 +71,8 @@ export default function Home() {
   return () => clearInterval(secTimer);
 }, [])
 
+// Handle theme change (Dark or Light Mode)
+// This overrides browser system theme preferences
 useEffect(() => {
   applyPreferredColorScheme(getPreferredColorScheme());
 }, []);
@@ -450,12 +456,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
           </div>
           }
 
-          {showDyland ? 
-          <div className={styles.dyLand}>
-            {dylandElement}
-          </div> : 
-          <div />
-          }
+          {showDyland && dylandElement}
 
           {!isDesktop ? 
           <div style={{ display:"flex", fontSize:"18px" }}>

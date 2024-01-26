@@ -208,6 +208,7 @@
 
 .logo {
   position: relative;
+  pointer-events: none;
 }
 
 .appIcon {
