@@ -15,7 +15,8 @@
     "ionicons": "^7.2.2",
     "next": "14.0.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-draggable": "^4.4.6"
   },
   "devDependencies": {
     "@types/node": "20.10.5",

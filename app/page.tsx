@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import { useState, useEffect, Fragment, MouseEvent } from "react";
+import { useState, useEffect, Fragment, MouseEvent, ReactNode } from "react";
+import Draggable from 'react-draggable';
 import { getPreferredColorScheme, applyPreferredColorScheme, toggleColorScheme } from './theme.js';
 import { IonIcon } from "@ionic/react";
 import { Popover, MenuList, MenuItem, ListItemIcon, ListItemText, Typography, Divider, Slider, Tooltip } from '@mui/material';
@@ -11,7 +12,7 @@ import { logoGithub, logoTwitter, logoDiscord, logoInstagram, batteryChargingOut
 export default function Home() {
 
   const [isDesktop, setIsDesktop] = useState(true);
-  const [showDyland, setShowDyland] = useState(true);
+  const [showDyland, setShowDyland] = useState(false);
 
   const [dylandElement, setDylandElement] = useState("Welcome to the Dyland!");
   const [clock, setClock] = useState("");
@@ -25,6 +26,31 @@ export default function Home() {
   const handleMenuClose = () => {
     setAnchorEl(null);
   };
+
+  // Function to make a JSX element draggable
+  interface DraggableProps {
+  children: ReactNode;
+  }
+
+  const makeDraggable = (element: ReactNode) => {
+    return (
+      <Draggable>
+        {element}
+      </Draggable>
+    );
+  };
+
+  // Sample Widget
+  const [testwidget, setTestwidget] = useState(<div className={styles.center}>
+      <Image
+        className={styles.logo}
+        src=""
+        alt="1us Logo"
+        width={180}
+        height={180}
+        priority
+      /></div>);
+
 
   useEffect(() => {
   let secTimer = setInterval( () => {
@@ -611,17 +637,7 @@ const [topbarmenu, setTopBarMenu] = useState(<MenuList className={styles.descrip
       </Popover>
         
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="1us.png"
-          alt="1us Logo"
-          width={180}
-          height={180}
-          priority
-        />
-      </div>
+      {makeDraggable(testwidget)}
 
       <div className={styles.grid}>
 
