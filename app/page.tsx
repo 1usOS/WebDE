@@ -16,6 +16,7 @@ import DyLand from "./components/DyLand";
 
 // Desktop Apps
 import Widget from "./apps/Widget";
+import Fluid from "./apps/Fluid";
 
 export default function Home() {
 
@@ -35,6 +36,7 @@ export default function Home() {
 
       {/* Desktop Components */}
       <Widget />
+      <Fluid />
 
       {/* App Dock */}
       <AppDock />

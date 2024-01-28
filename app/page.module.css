@@ -7,6 +7,10 @@
   min-height: 100vh;
 }
 
+.main div{
+  z-index: 2;
+}
+
 .topbar {
   display: inherit;
   justify-content: inherit;
