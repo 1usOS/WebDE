@@ -28,15 +28,9 @@ export default function Home() {
 
       {/* Top Bar */}
       <div className={styles.topbar}>
-
-          {/* Top Menu Bar */}
-          {!isDesktop ? <ComingSoonBar /> : <MenuBar />}
-
-          {/* Dyland */}
-          {showDyland && <DyLand />}
-
-          {/* Top Status Bar */}
-          {!isDesktop ? <ProfileIconBar /> : <StatusBar />}
+          {!isDesktop ? <ComingSoonBar /> : <MenuBar /> /* Top Menu Bar */}
+          {showDyland && <DyLand /> /* Dyland */}
+          {!isDesktop ? <ProfileIconBar /> : <StatusBar /> /* Top Status Bar */}
       </div>
 
       {/* Desktop Components */}
