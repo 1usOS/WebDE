@@ -27,7 +27,7 @@ export default function Home() {
     <main className={styles.main}>
 
       {/* Top Bar */}
-      <div className={styles.description}>
+      <div className={styles.topbar}>
 
           {/* Top Menu Bar */}
           {!isDesktop ? <ComingSoonBar /> : <MenuBar />}

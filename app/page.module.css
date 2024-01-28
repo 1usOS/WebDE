@@ -7,7 +7,7 @@
   min-height: 100vh;
 }
 
-.description {
+.topbar {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
@@ -18,14 +18,14 @@
   font-family: var(--font-mono);
 }
 
-.description a {
+.topbar a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
 }
 
-.descriptionBar {
+.menuBar {
   position: relative;
   margin: 0;
   padding: 1rem;
@@ -54,7 +54,7 @@
   text-overflow: ellipsis;
 }
 
-.descriptionDesk {
+.topbarDesk {
   position: relative;
   margin: 0;
   padding: 0.35rem .5rem;
@@ -65,62 +65,62 @@
   font-size:.85rem;
 }
 
-.descriptionDesk a {
+.topbarDesk a {
   padding:0.5rem 12px;
   border-radius: var(--border-radius);
   transition: .25s;
 }
 
-.descriptionDesk a:hover {
+.topbarDesk a:hover {
   background-color: rgba(155,155,155,0.2);
 }
 
-.descriptionDeskIcon {
+.topbarDeskIcon {
   font-size: 1.25rem;
   padding: 0 .35rem !important;
 }
 
-.descriptionMenuPopover div {
+.dropdownMenuPopover div {
   background: transparent;
   box-shadow: none;
 }
 
-.descriptionMenu {
+.dropdownMenu {
   margin-top: 12px !important;
   background-color: rgba(var(--callout-rgb), 0.2) !important;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3) !important;
   border-radius: var(--border-radius) !important;
 }
 
-.descriptionMenu span {
+.dropdownMenu span {
   font-size: .85rem;
 }
 
-.descriptionMenu p {
+.dropdownMenu p {
   font-size: .75rem;
 }
 
-.descriptionMenuItem {
+.dropdownMenuItem {
   padding: 0.5rem 1rem 0.5rem 1rem !important;
   margin: 0 0.5rem !important;
   border-radius: var(--border-radius) !important;
   transition: .25s;
 }
 
-.descriptionMenuTitle span {
+.dropdownMenuTitle span {
   padding-left: 1.25rem;
   font-size: 1.25rem !important;
 }
 
-.descriptionMenuItem:hover {
+.dropdownMenuItem:hover {
   background-color: rgba(155,155,155,0.2) !important;
 }
 
-.descriptionMenu hr {
+.dropdownMenu hr {
   margin: 0.5rem 0.5rem;
 }
 
-.descriptionMenuText {
+.dropdownMenuText {
   padding-right: 2.5rem;
 }
 
@@ -268,22 +268,22 @@
     height: 300px;
   }
 
-  .description {
+  .topbar {
     font-size: 0.8rem;
   }
 
-  .description a {
+  .topbar a {
     padding: 1rem;
   }
 
-  .description p {
+  .topbar p {
     display: flex;
     justify-content: center;
     position: fixed;
     width: 100%;
   }
 
-  .descriptionDesk {
+  .topbarDesk {
     position: absolute !important;
     top: 25px;
     border: none;
@@ -322,19 +322,19 @@
     filter: invert(0) drop-shadow(0 0 0.3rem #ffffff70);
   }
 
-  .descriptionMenuItem {
+  .dropdownMenuItem {
     color: #fff !important;
   }
 
-  .descriptionMenu p {
+  .dropdownMenu p {
     color: #fff !important;
   }
 
-  .descriptionMenu hr {
+  .dropdownMenu hr {
     background: rgba(155,155,155,.5);
   }
 
-  .descriptionMenuTitle span {
+  .dropdownMenuTitle span {
     color: #fff;
   }
 

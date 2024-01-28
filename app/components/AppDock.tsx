@@ -114,7 +114,7 @@ const AppDock = () => {
         </div>
         <Popover 
           id="topbar-menu"
-          className={styles.descriptionMenuPopover}
+          className={styles.dropdownMenuPopover}
           open={menuopen}
           anchorEl={anchorEl}
           onClose={handleMenuClose}

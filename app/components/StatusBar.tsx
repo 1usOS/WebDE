@@ -45,135 +45,135 @@ const StatusBar = () => {
 
   return (
     <Fragment>
-        <div className={styles.descriptionDesk}>
+        <div className={styles.topbarDesk}>
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
-            setDropdownmenu(<MenuList className={styles.descriptionMenu}>
-            <ListItemText className={styles.descriptionMenuTitle}>WiFi<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
+            setDropdownmenu(<MenuList className={styles.dropdownMenu}>
+            <ListItemText className={styles.dropdownMenuTitle}>WiFi<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>7 </p>ASUS Mesh</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>7 </p>ASUS Mesh</ListItemText>
                 <Typography variant="body2">WPA3/6GHz</Typography>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>6 </p>Starbucks Free WiFi</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>6 </p>Starbucks Free WiFi</ListItemText>
                 <Typography variant="body2">Public/5GHz</Typography>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>4 </p>Marcus's iPhone</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>4 </p>Marcus's iPhone</ListItemText>
                 <Typography variant="body2">WPA2/2.4GHz</Typography>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>6E </p>Starlink WiFi</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={wifi} /><p style={{display:"unset",fontSize: ".75rem"}}>6E </p>Starlink WiFi</ListItemText>
                 <Typography variant="body2">WPA3/6GHz</Typography>
             </MenuItem>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={wifi} />Other...</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={wifi} />Other...</ListItemText>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>Manage WiFi Settings</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>Manage WiFi Settings</ListItemText>
             </MenuItem>
             </MenuList>); 
-            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={wifi} /></a>
+            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.topbarDeskIcon}><IonIcon icon={wifi} /></a>
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
-            setDropdownmenu(<MenuList className={styles.descriptionMenu}>
-            <ListItemText className={styles.descriptionMenuTitle}>Bluetooth<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
+            setDropdownmenu(<MenuList className={styles.dropdownMenu}>
+            <ListItemText className={styles.dropdownMenuTitle}>Bluetooth<IonIcon icon={toggle} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={bluetooth} /> Keychron K4</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={bluetooth} /> Keychron K4</ListItemText>
                 <Typography variant="body2">100%<IonIcon icon={batteryChargingOutline} style={{fontSize:"18px"}} /></Typography>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={volumeHigh} /> Airpods Max - Find My</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={volumeHigh} /> Airpods Max - Find My</ListItemText>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={phonePortraitOutline} /> Marcus's iPhone</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={phonePortraitOutline} /> Marcus's iPhone</ListItemText>
             </MenuItem>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>Manage Bluetooth Settings</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>Manage Bluetooth Settings</ListItemText>
             </MenuItem>
             </MenuList>); 
-            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={bluetooth} /></a>
+            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.topbarDeskIcon}><IonIcon icon={bluetooth} /></a>
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
-            setDropdownmenu(<MenuList className={styles.descriptionMenu}>
-            <ListItemText className={styles.descriptionMenuTitle}>Sound<IonIcon icon={volumeHigh} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
+            setDropdownmenu(<MenuList className={styles.dropdownMenu}>
+            <ListItemText className={styles.dropdownMenuTitle}>Sound<IonIcon icon={volumeHigh} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
             <Slider valueLabelDisplay="auto" defaultValue={30} step={5} marks min={10} max={100} style={{margin:"0 1.5rem",maxWidth:"-webkit-fill-available"}} disabled />
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}><IonIcon icon={volumeMute} /> No Audio Device</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}><IonIcon icon={volumeMute} /> No Audio Device</ListItemText>
             </MenuItem>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>Manage Sound Settings</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>Manage Sound Settings</ListItemText>
             </MenuItem>
             </MenuList>); 
-            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={volumeHigh} /></a>
-            <a id="hide-mobile" onClick={toggleColorScheme} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><IonIcon icon={chevronDownOutline} /></a>
+            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.topbarDeskIcon}><IonIcon icon={volumeHigh} /></a>
+            <a id="hide-mobile" onClick={toggleColorScheme} rel="noopener noreferrer" className={styles.topbarDeskIcon}><IonIcon icon={chevronDownOutline} /></a>
 
             <div style={{display:"flex"}} className={styles.mobileTopbarRight} >
             <a aria-controls={menuopen ? 'basic-menu' : undefined}
             aria-haspopup="true"
             aria-expanded={menuopen ? 'true' : undefined}
             onClick={(event: MouseEvent<HTMLAnchorElement>) => {
-            setDropdownmenu(<MenuList className={styles.descriptionMenu}>
-            <ListItemText className={styles.descriptionMenuTitle}>Power<IonIcon icon={flash} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
+            setDropdownmenu(<MenuList className={styles.dropdownMenu}>
+            <ListItemText className={styles.dropdownMenuTitle}>Power<IonIcon icon={flash} style={{float:"right",paddingRight:"1.25rem",fontSize:"2rem"}} /></ListItemText>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>
                 <Typography variant="body2">Battery</Typography>
                 <IonIcon icon={batteryFull} style={{paddingTop:".5rem",fontSize:"48px"}}/>
                 </ListItemText>
-                <ListItemText className={styles.descriptionMenuText} style={{minWidth:"160px"}}>
+                <ListItemText className={styles.dropdownMenuText} style={{minWidth:"160px"}}>
                 <Typography variant="body2">Fully Charged</Typography>
                 <p style={{fontSize:"28px"}}>100%</p>
                 <Typography variant="body2">Healthy (16 Cycles)</Typography>
                 </ListItemText>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>
                 <Typography variant="body2">Adapter</Typography>
                 <IonIcon icon={flash} style={{paddingTop:".5rem",fontSize:"48px"}}/>
                 </ListItemText>
-                <ListItemText className={styles.descriptionMenuText} style={{minWidth:"160px"}}>
+                <ListItemText className={styles.dropdownMenuText} style={{minWidth:"160px"}}>
                 <Typography variant="body2">Idle</Typography>
                 <p style={{fontSize:"28px"}}>100W</p>
                 <Typography variant="body2">USB PD/PPS (20V)</Typography>
                 </ListItemText>
             </MenuItem>
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>
                 <Typography variant="body2">Energy</Typography>
                 <IonIcon icon={leaf} style={{paddingTop:".5rem",fontSize:"48px"}}/>
                 </ListItemText>
-                <ListItemText className={styles.descriptionMenuText} style={{minWidth:"160px"}}>
+                <ListItemText className={styles.dropdownMenuText} style={{minWidth:"160px"}}>
                 <Typography variant="body2">Power Saving Mode</Typography>
                 <p style={{fontSize:"28px"}}>14h 31m</p>
                 <Typography variant="body2">Estimated Remaining</Typography>
                 </ListItemText>
             </MenuItem>
             <Divider />
-            <MenuItem className={styles.descriptionMenuItem} onClick={handleMenuClose}>
-                <ListItemText className={styles.descriptionMenuText}>Manage Power Settings</ListItemText>
+            <MenuItem className={styles.dropdownMenuItem} onClick={handleMenuClose}>
+                <ListItemText className={styles.dropdownMenuText}>Manage Power Settings</ListItemText>
             </MenuItem>
             </MenuList>); 
-            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.descriptionDeskIcon}><p id="hide-mobile" style={{fontSize:".85rem"}}>100%</p><IonIcon style={{fontSize: "1.5rem"}} icon={batteryChargingOutline} /></a>
+            handleMenuClick(event);}} rel="noopener noreferrer" className={styles.topbarDeskIcon}><p id="hide-mobile" style={{fontSize:".85rem"}}>100%</p><IonIcon style={{fontSize: "1.5rem"}} icon={batteryChargingOutline} /></a>
             <a id="show-mobile" href="#" rel="noopener noreferrer" style={{padding: "0.1rem 1.5rem 0rem 0.5rem"}}>{mobileclock}</a>
             </div>
             <a id="hide-mobile" href="#" rel="noopener noreferrer">{clock}</a>
         </div>
         <Popover 
           id="topbar-menu"
-          className={styles.descriptionMenuPopover}
+          className={styles.dropdownMenuPopover}
           open={menuopen}
           anchorEl={anchorEl}
           onClose={handleMenuClose}
