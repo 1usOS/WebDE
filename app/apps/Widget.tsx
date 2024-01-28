@@ -4,16 +4,16 @@ import Draggable from 'react-draggable';
 
 // Import Widget Components
 import SampleWidget from "../widgets/SampleWidget";
+import Clock from "../widgets/Clock";
 
 export default function Widget() {
 
-  const [testwd, setTestwd] = useState(<SampleWidget />);
-
   // Function to make a component draggable
-  const makeDraggable = (Component: ComponentType) => {
+  const makeDraggable = (Component: ComponentType, pos = { x: 0, y: 0 }, top = '50%') => {
+
     return (
-      <Draggable>
-        <div>
+      <Draggable defaultPosition={pos}>
+        <div style={{ position: 'fixed', top: top }}>
           <Component />
         </div>
       </Draggable>
@@ -22,7 +22,8 @@ export default function Widget() {
 
   return (
     <Fragment>
-      {makeDraggable(SampleWidget)}
+      {makeDraggable(SampleWidget,{x: 0, y: -90})}
+      {makeDraggable(Clock,undefined,'15%')}
     </Fragment>
   );
 }

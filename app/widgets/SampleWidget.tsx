@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "../page.module.css";
 
-const SampleWidget = () => {
+export default function SampleWidget() {
 
   return (
     <div className={styles.center}>
@@ -15,6 +15,4 @@ const SampleWidget = () => {
       />
     </div>
   );
-};
-
-export default SampleWidget;
+}

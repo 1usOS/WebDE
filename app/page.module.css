@@ -179,7 +179,6 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 4rem 0;
 }
 
 .center::before {
@@ -220,6 +219,25 @@
   box-shadow: 0 14px 28px rgba(168, 168, 168, 0.15), 0 10px 10px rgba(168, 168, 168, 0.12);
 }
 
+.clocktime {
+  color: rgba(var(--foreground-rgb),.75);
+  font-family: system-ui;
+  font-weight: 600;
+  font-size: 108px;
+  line-height: 108px;
+  min-width: 300px;
+  text-align: center;
+}
+
+.clockdate {
+  color: rgba(var(--foreground-rgb),.75);
+  font-family: system-ui;
+  font-weight: 500;
+  font-size: 28px;
+  min-width: 500px;
+  text-align: center;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -258,16 +276,7 @@
   .card h2 {
     margin-bottom: 0.5rem;
   }
-
-  .center {
-    padding: 8rem 0 20rem;
-  }
-
-  .center::before {
-    transform: none;
-    height: 300px;
-  }
-
+  
   .topbar {
     font-size: 0.8rem;
   }
