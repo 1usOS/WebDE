@@ -9,10 +9,11 @@ import Clock from "../widgets/Clock";
 export default function Widget() {
 
   // Function to make a component draggable
-  const makeDraggable = (Component: ComponentType, pos = { x: 0, y: 0 }, top = '50%') => {
+  type DragType = undefined | false;
+  const makeDraggable = (Component: ComponentType, pos = { x: 0, y: 0 }, top = '50%', drag: DragType = undefined) => {
 
     return (
-      <Draggable defaultPosition={pos}>
+      <Draggable defaultPosition={pos} onStart={() => drag}>
         <div style={{ position: 'fixed', top: top }}>
           <Component />
         </div>
@@ -22,7 +23,7 @@ export default function Widget() {
 
   return (
     <Fragment>
-      {makeDraggable(SampleWidget,{x: 0, y: -90})}
+      {makeDraggable(SampleWidget,{x: 0, y: -90},undefined,false)}
       {makeDraggable(Clock,undefined,'15%')}
     </Fragment>
   );
