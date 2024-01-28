@@ -10,6 +10,7 @@ export default function Fluid() {
         SIM_RESOLUTION: 256,
         DENSITY_DISSIPATION: 0.8,
         PRESSURE_ITERATIONS: 30,
+        BACK_COLOR: getComputedStyle(document.documentElement).getPropertyValue('--fluid-back-color') || '#000000',
       });
     }
   }, []);
