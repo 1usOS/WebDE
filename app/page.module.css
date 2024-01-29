@@ -62,7 +62,7 @@
   position: relative;
   margin: 0;
   padding: 0.35rem .5rem;
-  background-color: rgba(var(--callout-rgb), 0.2);
+  background-color: rgba(var(--callout-rgb), 0.35);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
   display:flex;
@@ -91,7 +91,7 @@
 
 .dropdownMenu {
   margin-top: 12px !important;
-  background-color: rgba(var(--callout-rgb), 0.2) !important;
+  background-color: rgba(var(--callout-rgb), 0.75) !important;
   border: 1px solid rgba(var(--callout-border-rgb), 0.3) !important;
   border-radius: var(--border-radius) !important;
 }
@@ -144,7 +144,7 @@
   display:flex;
 }
 
-.card {
+.apps {
   padding: .25rem;
   margin: 0 .25rem;
   padding-bottom: .05rem;
@@ -156,18 +156,27 @@
   top: 0;
 }
 
-.card:hover {
+.apps:hover {
   top: -10px;
 }
 
-.card span {
+.apps span {
   display: inline-block;
   transition: transform 200ms;
 }
 
+.card {
+  background-color: rgba(var(--callout-rgb), 0.75);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+  padding: .25rem;
+}
+
 .card h2 {
-  font-weight: 600;
-  margin-bottom: 0.7rem;
+  padding-left: 1.25rem;
+  font-size: 2rem;
+  font-weight: 500;
+  margin: 1rem 0rem;
 }
 
 .card p {
@@ -244,12 +253,12 @@
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
-  .card:hover {
+  .apps:hover {
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
 
-  .card:hover span {
+  .apps:hover span {
     transform: translateX(4px);
   }
 }
@@ -273,7 +282,7 @@
     bottom: 14px;
   }
 
-  .card {
+  .apps {
     padding: .45rem;
   }
 

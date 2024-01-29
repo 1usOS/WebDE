@@ -21,7 +21,7 @@ const AppDock = () => {
         <div className={styles.grid}>
             <a
             href="#start=org.1us.file"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="File" placement="top">
             <Image
             className={styles.appIcon}
@@ -34,7 +34,7 @@ const AppDock = () => {
 
             <a
             href="#start=org.1us.web"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="Web" placement="top">
             <Image
             className={styles.appIcon}
@@ -47,7 +47,7 @@ const AppDock = () => {
 
             <a
             href="#appurl=https://chatu.1us.ca"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="Chatulus" placement="top">
             <Image
             className={styles.appIcon}
@@ -60,7 +60,7 @@ const AppDock = () => {
 
             <a
             href="#appurl=https://reactiveide.com"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="ReactiveIDE" placement="top">
             <Image
             className={styles.appIcon}
@@ -73,7 +73,7 @@ const AppDock = () => {
 
             <a id="hide-mobile"
             href="#start=org.1us.osinstaller"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="Install 1usOS" placement="top">
             <Image
             className={styles.appIcon}
@@ -88,7 +88,7 @@ const AppDock = () => {
 
             <a id="hide-mobile"
             href="#start=org.1us"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="1us" placement="top">
             <Image
             className={styles.appIcon}
@@ -101,7 +101,7 @@ const AppDock = () => {
 
             <a id="hide-mobile"
             href="#start=org.1us.applibrary"
-            className={styles.card} rel="noopener noreferrer">
+            className={styles.apps} rel="noopener noreferrer">
             <Tooltip title="App Library" placement="top">
             <Image
             className={styles.appIcon}
