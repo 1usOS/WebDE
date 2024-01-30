@@ -1,10 +1,10 @@
-import styles from "../page.module.css";
+import styles from "../app.module.css";
 import { useState, useEffect, ReactNode, Fragment, ComponentType } from "react";
 import Draggable from 'react-draggable';
 
 // Import Widget Components
-import SampleWidget from "../widgets/SampleWidget";
-import Clock from "../widgets/Clock";
+import SampleWidget from "./SampleWidget";
+import Clock from "./Clock";
 
 // Widget loader
 export default function Widget() {
@@ -27,7 +27,7 @@ export default function Widget() {
 
   return (
     <Fragment>
-      {makeDraggable(SampleWidget,{x: 0, y: -90},undefined,false)}
+      {/*makeDraggable(SampleWidget,{x: 0, y: -90},undefined,false)*/}
       {makeDraggable(Clock,undefined,{top: "15%", left: undefined})}
       {showwidgetmenu && makeDraggable(WidgetMenu,undefined,{top: "5%", left: "1em"},false)}
     </Fragment>
