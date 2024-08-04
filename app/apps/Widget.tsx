@@ -5,6 +5,7 @@ import Draggable from 'react-draggable';
 // Import Widget Components
 import SampleWidget from "../widgets/SampleWidget";
 import Clock from "../widgets/Clock";
+import ConfigUtil from "./ConfigUtil";
 
 // Widget loader
 export default function Widget() {
@@ -31,6 +32,7 @@ export default function Widget() {
       {makeDraggable(SampleWidget,{x: 0, y: -90},undefined,false)}
       {makeDraggable(Clock,undefined,{top: "15%", left: undefined})}
       {showwidgetmenu && makeDraggable(WidgetMenu,undefined,{top: "5%", left: "1em"},false)}
+      {makeDraggable(ConfigUtil,undefined,{top: "20%", left: "30%"})}
     </Fragment>
   );
 }

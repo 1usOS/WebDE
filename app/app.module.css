@@ -166,6 +166,7 @@
 }
 
 .card {
+  display: flex;
   background-color: rgba(var(--callout-rgb), 0.75);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
@@ -173,18 +174,31 @@
 }
 
 .card h2 {
-  padding-left: 1.25rem;
-  font-size: 2rem;
+  display: inline;
+  padding:0.5rem 12px;
+  font-size: 1.25rem;
   font-weight: 500;
-  margin: 1rem 0rem;
 }
 
 .card p {
+  display: inline;
   margin: 0;
-  opacity: 0.6;
   font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+}
+
+.card a {
+  padding:0.5rem 12px;
+  border-radius: var(--border-radius);
+  transition: .15s;
+}
+
+.card a:hover {
+  background-color: rgba(155,155,155,0.2);
+}
+
+.cardIcon {
+  font-size: 1.25rem !important;
+  padding: 0 .35rem !important;
 }
 
 .center {
