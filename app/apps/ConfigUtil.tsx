@@ -36,7 +36,7 @@ export default function ConfigUtil() {
         <div className={styles.center} style={{width:"100%"}}>
         <Image
           className={styles.logo}
-          style={{filter:"contrast(0)"}}
+          style={{filter:"invert(1) drop-shadow(2px 4px 6px #ffd4dc)"}}
           src="https://cdn-icons-png.freepik.com/512/483/483390.png"
           alt="1us Logo"
           width={180}
