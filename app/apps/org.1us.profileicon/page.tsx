@@ -1,4 +1,6 @@
-import styles from "../app.module.css";
+"use client";
+
+import styles from "/app/app.module.css";
 import { IonIcon } from "@ionic/react";
 import { logoGithub, logoTwitter, logoDiscord, logoInstagram } from  "ionicons/icons";
 

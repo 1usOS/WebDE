@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useEffect, MouseEvent, ReactNode, Fragment } from "react";
-import styles from "../app.module.css";
+import styles from "/app/app.module.css";
 import { Popover, MenuList, MenuItem, ListItemText, Typography, Divider, Slider } from '@mui/material';
 
 const MenuBar = () => {

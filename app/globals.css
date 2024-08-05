@@ -29,6 +29,9 @@
     #00000080
   );
 
+  --window-background-rgb: rgba(250,255,250,.99);
+  --window-box-shadow: 0 0 6px rgba(0, 0, 0, 0.1), 0 2px 6px rgba(0, 0, 0, 0.1);
+
   --callout-rgb: 248, 250, 251;
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
@@ -55,6 +58,9 @@
       #ffffff10,
       #ffffff80
     );
+
+    --window-background-rgb: rgba(24,24,24,.99);
+    --window-box-shadow: 0 0 6px rgba(255, 255, 255, 0.1), 0 2px 6px rgba(255, 255, 255, 0.1);
 
     --callout-rgb: 5, 5, 5;
     --callout-border-rgb: 108, 108, 108;

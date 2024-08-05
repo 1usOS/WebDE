@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import { useState, useEffect, MouseEvent, Fragment } from "react";
-import styles from "../app.module.css";
+import styles from "/app/app.module.css";
 import { Popover, Tooltip, Divider } from '@mui/material';
 
 const AppDock = () => {

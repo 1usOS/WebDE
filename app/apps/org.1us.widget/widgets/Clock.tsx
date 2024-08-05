@@ -1,5 +1,5 @@
 import { useState, useEffect, Fragment } from "react";
-import styles from "../app.module.css";
+import styles from "/app/app.module.css";
 
 export default function Clock() {
 
