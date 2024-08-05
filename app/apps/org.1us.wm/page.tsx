@@ -5,8 +5,7 @@ import { useState, useEffect, ReactNode, Fragment, ComponentType } from "react";
 import Draggable from 'react-draggable';
 import { IonIcon } from "@ionic/react";
 import { menu, closeCircle } from  "ionicons/icons";
-
-import ConfigUtil from "../org.1us.acu/page";
+import Settings from "../org.1us.settings/page";
 
 // Window Manager / App Loader
 export default function WindowManager() {
@@ -20,7 +19,7 @@ export default function WindowManager() {
     return (
       <Draggable defaultPosition={pos} onStart={() => drag}>
         <div className={styles.window} style={{position: 'fixed', top: start.top, left: start.left, minWidth:"400px", minHeight:"200px", background:"var(--window-background-rgb)", boxShadow:"var(--window-box-shadow)"}}>
-          <div style={{display:"block", textAlign:"center", margin:".25em 0", paddingBottom:".25rem"}}>
+          <div style={{display:"block", textAlign:"center", margin:".5em 0"}}>
             <a style={{position:"absolute",top:".75rem",left:".75rem"}} className={styles.windowIcon}><IonIcon icon={menu} /></a>
             <h2>Title</h2>
             <a style={{position:"absolute",top:".75rem",right:".75rem"}} className={styles.windowIcon}><IonIcon icon={closeCircle} /></a>
@@ -45,7 +44,7 @@ export default function WindowManager() {
   return (
     <Fragment>
       {/* App Loader */}
-      {CustomWindow(ConfigUtil,undefined,{top: "20%", left: "30%"})}
+      {CustomWindow(Settings,undefined,{top: "20%", left: "30%"})}
       {DefaultWindow(SampleApp,undefined,{top: "20%", left: "10%"})}
     </Fragment>
   );

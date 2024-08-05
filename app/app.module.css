@@ -173,8 +173,7 @@
 
 .window h2 {
   display: inline;
-  padding:0.5rem 12px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
@@ -185,7 +184,8 @@
 }
 
 .window a {
-  padding:0.5rem 12px;
+  padding: .5rem 6px .25rem;
+  font-size: .9rem;
   border-radius: var(--border-radius);
   transition: .15s;
 }
@@ -197,6 +197,16 @@
 .windowIcon {
   font-size: 1.25rem !important;
   padding: 0 .35rem !important;
+}
+
+.list {
+  margin: .5em 0;
+  overflow-y: scroll;
+}
+
+.list a {
+  display: flex;
+  margin: .25em 0em;
 }
 
 .center {
