@@ -5,13 +5,13 @@ import styles from "./app.module.css";
 import { useState, useEffect, MouseEvent, ReactNode } from "react";
 
 // Apps
-import StatusBar from "./apps/org.1us.statusbar/page";
-import MenuBar from "./apps/org.1us.menubar/page";
-import AppDock from "./apps/org.1us.appdock/page";
-import WindowManager from "./apps/org.1us.wm/page";
-import DyLand from "./apps/org.1us.dyland/page";
-import Widget from "./apps/org.1us.widget/page";
-import Fluid from "./apps/org.1us.fluid/page";
+import StatusBar from "./apps/org.1us.statusbar";
+import MenuBar from "./apps/org.1us.menubar";
+import AppDock from "./apps/org.1us.appdock";
+import WindowManager from "./apps/org.1us.wm";
+import DyLand from "./apps/org.1us.dyland";
+import Widget from "./apps/org.1us.widget";
+import Fluid from "./apps/org.1us.fluid";
 
 export default function Home() {
 

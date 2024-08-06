@@ -7,10 +7,10 @@ import { IonIcon } from "@ionic/react";
 import { menu, removeCircle } from  "ionicons/icons";
 
 //Import Apps
-import Settings from "../org.1us.settings/page";
-import ComingSoonBar from "../org.1us.comingsoon/page";
-import AppDock from "../org.1us.appdock/page";
-import Example from "../org.1us.example/page";
+import Settings from "../org.1us.settings";
+import ComingSoonBar from "../org.1us.comingsoon";
+import AppDock from "../org.1us.appdock";
+import Example from "../org.1us.example";
 
 // Window Manager / App Loader
 export default function WindowManager() {
