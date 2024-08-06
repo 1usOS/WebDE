@@ -86,7 +86,6 @@ export default function WindowManager() {
         <p className={styles.textFieldLabel}>Enter a package name:</p>
         <br />
         <input
-          key=""
           className={styles.textField}
           placeholder="com.example.app"
           value={packagename}
