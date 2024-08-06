@@ -22,7 +22,6 @@ export default function Home() {
     <main className={styles.main}>
 
       {/* Desktop Components */}
-      <Fluid />
       <Widget />
       <WindowManager />
 
@@ -32,6 +31,9 @@ export default function Home() {
           {showDyland && <DyLand /> /* Dyland */}
           <StatusBar /> {/* Top Status Bar */}
       </div>
+
+      {/* Wallpaper Engine */}
+      <Fluid /> {/* Must be loaded after theme.js of StatusBar */}
       
       {/* App Dock */}
       <AppDock />
