@@ -199,6 +199,42 @@
   padding: 0 .35rem !important;
 }
 
+.button .buttonOutlined {
+  padding: .5rem 6px .25rem;
+  font-size: .9rem;
+  border-radius: var(--border-radius);
+  transition: .15s;
+}
+
+.button:hover .buttonOutlined:hover {
+  background-color: rgba(155,155,155,0.2);
+}
+
+.buttonOutlined {
+  border: 1px solid #282828;
+  padding: .5rem .75rem !important;
+}
+
+.textField {
+  font-size: .9rem;
+  padding: .75em;
+  margin: .5em 0;
+  border-radius: var(--border-radius);
+  border: 1px solid #282828;
+  transition: .25s;
+}
+
+.textField:focus-visible {
+  outline: 2px solid #7e7e7e;
+  outline-offset: -2px;
+}
+
+.textFieldLabel {
+  padding: .5em;
+  color: lightgray;
+  font-size: 0.75em !important;
+}
+
 .list {
   margin: .5em 0;
   overflow-y: scroll;

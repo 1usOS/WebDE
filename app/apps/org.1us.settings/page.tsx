@@ -5,13 +5,13 @@ import { useState, useEffect, MouseEvent, ReactNode, Fragment } from "react";
 import styles from "/app/app.module.css";
 import { Popover, MenuList, MenuItem, ListItemText, Typography, Divider, Slider } from '@mui/material';
 import { IonIcon } from "@ionic/react";
-import { menu, closeCircle, searchOutline, leaf, hardwareChip, rocket, albums, wifi, globe, bluetooth, notifications, sparkles, layers, save, apps, cloudDownload, tv, volumeMedium, server, language, text, time, keypad, people, informationCircleOutline, gitNetwork } from  "ionicons/icons";
+import { menu, removeCircle, searchOutline, leaf, hardwareChip, rocket, albums, wifi, globe, bluetooth, notifications, sparkles, layers, save, apps, cloudDownload, tv, volumeMedium, server, language, text, time, keypad, people, informationCircleOutline, gitNetwork } from  "ionicons/icons";
 
 export default function Settings() {
 
   return (
     <div className={styles.window} style={{display:"flex", minWidth:"600px", minHeight:"300px", height:"60vh", background:"var(--window-background-rgb)", boxShadow:"var(--window-box-shadow)"}}>
-      <a style={{position:"absolute",top:".75rem",right:".75rem"}} className={styles.windowIcon}><IonIcon icon={closeCircle} /></a>
+      <a style={{position:"absolute",top:".75rem",right:".75rem"}} className={styles.windowIcon}><IonIcon icon={removeCircle} /></a>
       <div style={{textAlign:"center",position:"relative",padding:".75em .75em .5em .5em", minWidth:"12rem",borderRight:"1px solid #282828"}}>
         <a style={{position:"absolute",top:".75rem",left:".75rem"}} className={styles.windowIcon}><IonIcon icon={searchOutline} /></a>
         <h2>Settings</h2>
