@@ -71,7 +71,7 @@
 .topbarDesk a {
   padding:0.5rem 12px;
   border-radius: var(--border-radius);
-  transition: .25s;
+  transition: .15s;
 }
 
 .topbarDesk a:hover {
@@ -107,7 +107,7 @@
   padding: 0.5rem 1rem 0.5rem 1rem !important;
   margin: 0 0.5rem !important;
   border-radius: var(--border-radius) !important;
-  transition: .25s;
+  transition: .15s;
 }
 
 .dropdownMenuTitle span {
@@ -150,7 +150,7 @@
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background .25s, border .25s, top ease .25s;
+  transition: background .15s, border .15s, top ease .15s;
   position: relative;
   top: 0;
 }
@@ -221,7 +221,7 @@
   margin: .5em 0;
   border-radius: var(--border-radius);
   border: 1px solid #282828;
-  transition: .25s;
+  transition: .15s;
 }
 
 .textField:focus-visible {
