@@ -18,7 +18,6 @@
   font-size: 0.85rem;
   max-width: var(--max-width);
   width: 100%;
-  z-index: 2;
   font-family: var(--font-mono);
 }
 
@@ -72,7 +71,7 @@
 .topbarDesk a {
   padding:0.5rem 12px;
   border-radius: var(--border-radius);
-  transition: .25s;
+  transition: .15s;
 }
 
 .topbarDesk a:hover {
@@ -108,7 +107,7 @@
   padding: 0.5rem 1rem 0.5rem 1rem !important;
   margin: 0 0.5rem !important;
   border-radius: var(--border-radius) !important;
-  transition: .25s;
+  transition: .15s;
 }
 
 .dropdownMenuTitle span {
@@ -151,7 +150,7 @@
   border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
   border: 1px solid rgba(var(--card-border-rgb), 0);
-  transition: background .25s, border .25s, top ease .25s;
+  transition: background .15s, border .15s, top ease .15s;
   position: relative;
   top: 0;
 }
@@ -165,26 +164,85 @@
   transition: transform 200ms;
 }
 
-.card {
+.window {
   background-color: rgba(var(--callout-rgb), 0.75);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
   padding: .25rem;
 }
 
-.card h2 {
-  padding-left: 1.25rem;
-  font-size: 2rem;
+.window h2 {
+  display: inline;
+  font-size: 1rem;
   font-weight: 500;
-  margin: 1rem 0rem;
 }
 
-.card p {
+.window p {
+  display: inline;
   margin: 0;
-  opacity: 0.6;
   font-size: 0.9rem;
-  line-height: 1.5;
-  max-width: 30ch;
+}
+
+.window a {
+  padding: .5rem 6px .25rem;
+  font-size: .9rem;
+  border-radius: var(--border-radius);
+  transition: .15s;
+}
+
+.window a:hover {
+  background-color: rgba(155,155,155,0.2);
+}
+
+.windowIcon {
+  font-size: 1.25rem !important;
+  padding: 0 .35rem !important;
+}
+
+.button .buttonOutlined {
+  padding: .5rem 6px .25rem;
+  font-size: .9rem;
+  border-radius: var(--border-radius);
+  transition: .15s;
+}
+
+.button:hover .buttonOutlined:hover {
+  background-color: rgba(155,155,155,0.2);
+}
+
+.buttonOutlined {
+  border: 1px solid #282828;
+  padding: .5rem .75rem !important;
+}
+
+.textField {
+  font-size: .9rem;
+  padding: .75em;
+  margin: .5em 0;
+  border-radius: var(--border-radius);
+  border: 1px solid #282828;
+  transition: .15s;
+}
+
+.textField:focus-visible {
+  outline: 2px solid #7e7e7e;
+  outline-offset: -2px;
+}
+
+.textFieldLabel {
+  padding: .5em;
+  color: lightgray;
+  font-size: 0.75em !important;
+}
+
+.list {
+  margin: .5em 0;
+  overflow-y: scroll;
+}
+
+.list a {
+  display: flex;
+  margin: .25em 0em;
 }
 
 .center {
@@ -264,7 +322,7 @@
 }
 
 @media (prefers-reduced-motion) {
-  .card:hover span {
+  .window:hover span {
     transform: none;
   }
 }
@@ -286,7 +344,7 @@
     padding: .45rem;
   }
 
-  .card h2 {
+  .window h2 {
     margin-bottom: 0.5rem;
   }
   

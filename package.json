@@ -8,20 +8,20 @@
     "start": "next start"
   },
   "dependencies": {
-    "@emotion/react": "^11.11.3",
-    "@emotion/styled": "^11.11.0",
-    "@ionic/react": "^7.6.1",
-    "@mui/material": "^5.15.3",
-    "ionicons": "^7.2.2",
-    "next": "14.0.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-draggable": "^4.4.6",
-    "webgl-fluid-enhanced": "^0.5.2"
+    "@emotion/react": "11.13.0",
+    "@emotion/styled": "11.13.0",
+    "@ionic/react": "8.2.6",
+    "@mui/material": "5.16.6",
+    "ionicons": "7.4.0",
+    "next": "14.2.5",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-draggable": "4.4.6",
+    "webgl-fluid-enhanced": "0.6.1"
   },
   "devDependencies": {
-    "@types/node": "20.10.5",
-    "@types/react": "18.2.45",
-    "typescript": "5.3.3"
+    "@types/node": "22.1.0",
+    "@types/react": "18.3.3",
+    "typescript": "5.5.4"
   }
 }

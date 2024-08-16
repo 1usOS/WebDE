@@ -1,5 +1,7 @@
+"use client";
+
 import { useState, useEffect, MouseEvent, ReactNode, Fragment } from "react";
-import styles from "../page.module.css";
+import styles from "/app/app.module.css";
 import { getPreferredColorScheme, applyPreferredColorScheme, toggleColorScheme } from './theme.js';
 import { IonIcon } from "@ionic/react";
 import { Popover, MenuList, MenuItem, ListItemText, Typography, Divider, Slider } from '@mui/material';

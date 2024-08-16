@@ -1,4 +1,6 @@
-import styles from "../page.module.css";
+"use client";
+
+import styles from "/app/app.module.css";
 
 const ComingSoonBar = () => {
 

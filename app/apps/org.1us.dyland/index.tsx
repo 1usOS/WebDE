@@ -1,5 +1,7 @@
+"use client";
+
 import { Fragment } from "react";
-import styles from "../page.module.css";
+import styles from "/app/app.module.css";
 import { Popover, Tooltip, Divider } from '@mui/material';
 
 const DyLand = () => {

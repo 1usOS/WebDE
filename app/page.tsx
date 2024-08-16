@@ -1,43 +1,40 @@
 "use client";
 
 // Library and Modules
-import styles from "./page.module.css";
+import styles from "./app.module.css";
 import { useState, useEffect, MouseEvent, ReactNode } from "react";
 
-// Landing Page Components
-import ProfileIconBar from "./components/ProfileIconBar";
-import ComingSoonBar from "./components/ComingSoonBar";
-
-// Desktop Components
-import StatusBar from "./components/StatusBar";
-import MenuBar from "./components/MenuBar";
-import AppDock from "./components/AppDock";
-import DyLand from "./components/DyLand";
-
-// Desktop Apps
-import Widget from "./apps/Widget";
-import Fluid from "./apps/Fluid";
+// Apps
+import StatusBar from "./apps/org.1us.statusbar";
+import MenuBar from "./apps/org.1us.menubar";
+import AppDock from "./apps/org.1us.appdock";
+import WindowManager from "./apps/org.1us.wm";
+import DyLand from "./apps/org.1us.dyland";
+import Widget from "./apps/org.1us.widget";
+import Fluid from "./apps/org.1us.fluid";
 
 export default function Home() {
 
   //Configuration variables
-  const [isDesktop, setIsDesktop] = useState(true);
   const [showDyland, setShowDyland] = useState(true);
 
   return (
     <main className={styles.main}>
 
-      {/* Top Bar */}
-      <div className={styles.topbar}>
-          {!isDesktop ? <ComingSoonBar /> : <MenuBar /> /* Top Menu Bar */}
-          {showDyland && <DyLand /> /* Dyland */}
-          {!isDesktop ? <ProfileIconBar /> : <StatusBar /> /* Top Status Bar */}
-      </div>
-
       {/* Desktop Components */}
       <Widget />
-      <Fluid />
+      <WindowManager />
 
+      {/* Top Bar */}
+      <div className={styles.topbar}>
+          <MenuBar /> {/* Top Menu Bar */}
+          {showDyland && <DyLand /> /* Dyland */}
+          <StatusBar /> {/* Top Status Bar */}
+      </div>
+
+      {/* Wallpaper Engine */}
+      <Fluid /> {/* Must be loaded after theme.js of StatusBar */}
+      
       {/* App Dock */}
       <AppDock />
 
